@@ -153,12 +153,4 @@ class VentanaInfo_img(QDialog):
     
     def info(self,caracteristica):
         imagen_dicom = pydicom.dcmread(os.path.join(self.carpeta, self.archivos[self.indice-1]))
-        return getattr(imagen_dicom, caracteristica, "No existe")
-        
-        
-        
-        
-        
-        
-        
-        
+        return getattr(imagen_dicom, caracteristica, "No existe") 
