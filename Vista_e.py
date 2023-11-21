@@ -155,9 +155,6 @@ class VentanaInfo_img(QDialog):
         imagen_dicom = pydicom.dcmread(os.path.join(self.carpeta, self.archivos[self.indice-1]))
         return getattr(imagen_dicom, caracteristica, "No existe")
         
-    
-        ### VER EN VIDEO COMO VUELVE A RECUPERAR LAS PESTAÑAS HIDE"
-        
         
         
         
